@@ -9,9 +9,6 @@ from jsk_recognition_msgs.msg import BoundingBox, BoundingBoxArray
 import open3d as o3d
 
 
-
-
-
 def max_min_list(current_points: list):
     x_list = [point[0] for point in current_points]
     y_list = [point[1] for point in current_points]
@@ -62,7 +59,7 @@ def xyz_dimension_xyz(point: np.ndarray, labels: np.ndarray, box_array: Bounding
 
 
 
-root_path = "/home/jiayansong/nus/ME5413/homework1/me5413_homework1/me5413/1_lidar/lidar_data"
+root_path = ""
 # frame1:
 file_data1 = np.fromfile(os.path.join(root_path, 'frame1.pcd.bin'), dtype=np.float32)
 points1 = file_data1.reshape((-1, 5))[:, :4]
