@@ -9,6 +9,9 @@ from jsk_recognition_msgs.msg import BoundingBox, BoundingBoxArray
 import open3d as o3d
 
 
+
+
+
 def max_min_list(current_points: list):
     x_list = [point[0] for point in current_points]
     y_list = [point[1] for point in current_points]
