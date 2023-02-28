@@ -146,25 +146,3 @@ def publish():
 
 if __name__ == '__main__':
     publish()
-
-
-
-# num = points1.shape[0]
-# print(f"max:{max_label}")
-# colors = np.zeros((num, 3))
-# color_set = np.zeros((max_label + 1, 3))
-# for label in range(max_label + 1):
-#     color_set[label, :] = np.random.rand(1, 3)
-# for i in range(num):
-#     if clustering.labels_[i] == -1:
-#         colors[i, :] = np.array([1, 1, 1])
-#     else:
-#         colors[i, :] = color_set[clustering.labels_[i], :]
-
-
-# o3d_pcd = open3d.geometry.PointCloud(open3d.utility.Vector3dVector(points1))
-# colorsp = np.random.rand(points1.shape[0], 3)
-# # print(colors)
-# o3d_pcd.colors = open3d.utility.Vector3dVector(colors)
-# open3d.io.write_point_cloud(os.path.join(root_path, '1.pcd'), o3d_pcd)
-
