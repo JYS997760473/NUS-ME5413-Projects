@@ -73,6 +73,7 @@ def astar(maze, start, end):
 
             # Append
             children.append(new_node)
+            print(f"child:{node_position}")
 
         # Loop through children
         for child in children:
@@ -94,27 +95,28 @@ def astar(maze, start, end):
 
             # Add the child to the open list
             open_list.append(child)
+            
 
 
-# def main():
+def main():
 
-#     maze = [[0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
-#             [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+    maze = [[0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
+            [0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 1, 0, 0, 1, 0, 0],
+            [0, 1, 0, 0, 1, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+            [0, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+            [0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
+            [0, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+            [0, 1, 0, 0, 0, 0, 0, 0, 0, 0]]
 
-#     start = (0, 0)
-#     end = (7, 6)
+    start = (0, 0)
+    end = (9, 9)
 
-#     path = astar(maze, start, end)
-#     print(path)
+    path = astar(maze, start, end)
+    print(path)
 
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()

@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-map = cv2.imread('../map/vivocity.png')
+map = cv2.imread('./map/vivocity.png')
 map = cv2.cvtColor(map, cv2.COLOR_BGR2RGB)
 
 # light_free = (223, 213, 193)
